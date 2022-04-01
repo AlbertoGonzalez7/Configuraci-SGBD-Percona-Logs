@@ -122,9 +122,21 @@
 
 * *I així ens sortirà en el COUNT( * ) el número 16, que és el número de taules que te la bd sakila*
 
+### 7. Executa una query mitjançant la funció SLEEP(11) per tal de que es guardi en el log de Slow Query Log. Mostra el contingut del log demostrant-ho.
 
+* *Executem una query amb la comanda SELECT SLEEP(11): al Mysql*
 
+![7](https://user-images.githubusercontent.com/101892290/161314117-e386cd98-e19a-44c1-9c2f-c292f358d169.jpg)
 
+* *I en el contingut del Slow Query log, ens surt la comanda*
+
+![7 1](https://user-images.githubusercontent.com/101892290/161314239-e042fdf2-75f9-484c-8b13-e14206735727.jpg)
+
+### 8. Assegura't que el Binary Log estigui activat i borra tots els logs anteriors mitjançant la sentència RESET MASTER.
+
+* *Fem la comanda RESET MASTER; i comprovem que el Binary Log està activat*
+
+![8](https://user-images.githubusercontent.com/101892290/161314504-361d9dcc-6167-4963-90e3-05f89f2ee776.jpg)
 
 
 
