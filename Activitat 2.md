@@ -81,7 +81,7 @@
 
 ### 4. Activa els logs en temps d'execució mitjançant la sentència SET GLOBAL. També canvia el destí de log general a una taula (paràmetre log_output). Quines són les sentències que has utilitzat? A quina taula es guarden els dels del general log?
 
-* *Executem la comanda SET GLOBAL general_log = 'ON'; al Mysql per activar el general log, que ja ve creada la taula *
+* *Executem la comanda SET GLOBAL general_log = 'ON'; al Mysql per activar el general log, que ja ve creada la taula*
 
 ![4](https://user-images.githubusercontent.com/101892290/161311844-73868e37-3b40-4794-ac6a-1f17ad45e192.jpg)
 
@@ -91,7 +91,40 @@
 
 ![4 2](https://user-images.githubusercontent.com/101892290/161312027-76575b52-e041-4c6d-bc0f-f94aa8fe424f.jpg)
 
-### 5. Carrega la BD Sakila localitzada a la web de o Descarrega't el fitxer sakila-schema.sql del Moodle. o carrega la BD dins del MySQL utilitzant la sentència: ####mysql> SOURCE <ruta_fitxer>/sakila-schema.sql;
+### 5. Carrega la BD Sakila localitzada a la web de o Descarrega't el fitxer sakila-schema.sql del Moodle. o carrega la BD dins del MySQL utilitzant la sentència: 
+#### mysql> SOURCE <ruta_fitxer>/sakila-schema.sql;
+
+* *Descarragarem la base de dades amb el seguent enllaç*
+
+* https://dev.mysql.com/doc/index-other.html
+
+* *Amb el programa (WinSCP) Pasarem el sakila-schema a la nostra maquina virtual en la ruta /var/lib/mysql/mysql*
+
+![image](https://user-images.githubusercontent.com/101892290/161312600-723517d5-342d-46f9-bc1e-4073813768ce.png)
+
+* *I la carregarem amb la seguent comanda*
+
+![5](https://user-images.githubusercontent.com/101892290/161312716-65fbb0e4-4e29-47c3-9f0c-38d03f580179.jpg)
+
+* *I com podem observar, ja la tindirem*
+
+![5 1](https://user-images.githubusercontent.com/101892290/161312757-b9ee4f0c-48cd-4212-9b32-2d91d35f4fe5.jpg)
+
+### 6. Compte el numero de sentències CREATE TABLE dins del general log mitjançant una sentència SQL. o Mostra quina sentència has utilitzat i mostra'n el resultat.
+
+* *Per comptar el numero de sentències es fa amb la comanda SELECT COUNT( * ) FROM gemeral_log argument LIKE 'CREATE TABLE%'; al Mysql, pero ens surt 0, això es degut perque l'argument es troba en sistema Hexadecimal i l'hem de transformar a string*
+
+![image](https://user-images.githubusercontent.com/101892290/161313555-78ba46b7-d9ca-45ff-a741-dd2017242bb4.png)
+
+* *Per poder passar de Hexadecimal a string ho hem de fer amb les seguents comandes:*
+
+![image](https://user-images.githubusercontent.com/101892290/161313766-4bd294cf-d97a-411f-85d4-268f24c86526.png)
+
+* *I així ens sortirà en el COUNT( * ) el número 16, que és el número de taules que te la bd sakila*
+
+
+
+
 
 
 
