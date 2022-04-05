@@ -138,6 +138,10 @@
 
 ![8](https://user-images.githubusercontent.com/101892290/161314504-361d9dcc-6167-4963-90e3-05f89f2ee776.jpg)
 
+* *Activem el log_bin posant un altre cop el hashtag si no el tinguessim posat*
+
+![image](https://user-images.githubusercontent.com/101892290/161771897-7ddb651d-26fb-4223-ae85-e32247db2de4.png)
+
 ### Crea i esborra una base de dades anomenada foo. Utilitza la sentències:
 #### mysql> CREATE DATABASE foo;
 #### mysql> DROP DATABASE foo;
