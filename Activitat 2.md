@@ -138,8 +138,53 @@
 
 ![8](https://user-images.githubusercontent.com/101892290/161314504-361d9dcc-6167-4963-90e3-05f89f2ee776.jpg)
 
+### Crea i esborra una base de dades anomenada foo. Utilitza la sentències:
+#### mysql> CREATE DATABASE foo;
+#### mysql> DROP DATABASE foo;
 
+* *Creem i esborrem la base de dades foo amb les seguents comandes:*
 
+![8 1](https://user-images.githubusercontent.com/101892290/161764247-f6a77ed7-d59e-41d3-851b-98d352812190.jpg)
 
+### Mitjançant la sentència SHOW BINLOG EVENTS llista els events i comprova les sentències anteriors en quin fitxer de log estan.
 
+* *Executem la comanda SHOW BINLOG EVENTS*
+
+![8 2](https://user-images.githubusercontent.com/101892290/161764865-77daf1da-aa8d-4cae-9f46-a2afca174422.jpg)
+
+* *Com podem observar, les sentencies es guarden en un fitxer anomenat binlog. L'arxiu binlog.000001 com podem observar esta en binari*
+
+![8 3](https://user-images.githubusercontent.com/101892290/161765266-4c226dcf-8cde-477f-8463-90088c8f0682.jpg)
+
+* *En l'arxiu binlog.index podem observar tots els binlog que es van creant*
+
+![8 4](https://user-images.githubusercontent.com/101892290/161765506-db22b4bc-e9bd-4f21-a767-ae8189a9c8e2.jpg)
+
+### Realitza un rotate log mitjançant la sentència FLUSH LOGS. Què realitza exactament aquesta sentència?
+
+* *Flush log s'utilitza per buidar els registres individuals com ara els registres binaris, els registres generals, els registres d'error, etc.*
+
+![8 5](https://user-images.githubusercontent.com/101892290/161765862-1a635d42-5804-4593-9479-e60d2caa100f.jpg)
+
+### Crea i esborra una altra base de dades com l'exemple anteior del foo. Però en aquest cas anomena la base de dades bar
+
+* *Creem i esborrem la base de dades bar amb les seguents comandes:*
+
+![8 7](https://user-images.githubusercontent.com/101892290/161766276-a3d66461-59dd-4d7d-ae0a-14444c9e3d8e.jpg)
+
+### Llista tots els fitxers de log i els últims canvis mitjançant la sentència SHOW. Quina sentència has utilitzat? Mostra'n el resultat.
+
+* *Amb la comanda SHOW BINARY LOGS podem observar que s'ha creat un nou fitxer binlog*
+
+![8 8](https://user-images.githubusercontent.com/101892290/161769700-7bf10d1a-51f1-4c39-95a5-4bd42872a462.jpg)
+
+### Esborra el primer binary log. Quina sentència has utilitzat?
+
+* *Per esborrar el primer binary log, ho farem amb la comanda PURGE BINARY LOGS TO 'binlog.000002';. Seleccionem el 000002 ja que esborra cap enredere.*
+
+![8 9](https://user-images.githubusercontent.com/101892290/161770106-76c635e3-5515-4919-9018-076b222fe496.jpg)
+
+### Utilitza el programa mysqlbinlog per mostrar el fitxer mysql-bin.000002
+* Quin és el seu contingut?
+* Quin número d'event ha estat el de la creació de la base de dades bar?
 
