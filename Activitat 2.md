@@ -112,7 +112,7 @@
 
 ### 6. Compte el numero de sentències CREATE TABLE dins del general log mitjançant una sentència SQL. o Mostra quina sentència has utilitzat i mostra'n el resultat.
 
-* *Per comptar el numero de sentències es fa amb la comanda SELECT COUNT( * ) FROM gemeral_log argument LIKE 'CREATE TABLE%'; al Mysql, pero ens surt 0, això es degut perque l'argument es troba en sistema Hexadecimal i l'hem de transformar a string*
+* *Per comptar el numero de sentències es fa amb la comanda SELECT COUNT( * ) FROM general_log WHERE argument LIKE 'CREATE TABLE%'; al Mysql, pero ens surt 0, això es degut perque l'argument es troba en sistema Hexadecimal i l'hem de transformar a string*
 
 ![image](https://user-images.githubusercontent.com/101892290/161313555-78ba46b7-d9ca-45ff-a741-dd2017242bb4.png)
 
