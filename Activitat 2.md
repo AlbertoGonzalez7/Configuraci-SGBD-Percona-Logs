@@ -192,3 +192,42 @@
 * Quin és el seu contingut?
 * Quin número d'event ha estat el de la creació de la base de dades bar?
 
+
+### 9. De quina manera podem desactivar el binary log només d’una sessió en concret. Imagina’t que ets un administrador de la BD i no vols que les instruccions que facis es gravin en el binary_log.
+
+* *Per desactivar el binary log d'una sessió ho farem amb la comanda: SET SESSION SQL_BIN_LOG = OFF;*
+
+![9](https://user-images.githubusercontent.com/101892290/162190859-117a535b-bcbf-4a95-971e-f39dc98730b0.jpg)
+
+## CONFIGURACIÓ DEL SERVIDOR PERCONA SERVER PER REALITZAR CONNEXIONS SEGURES SoBRE SSL. (3 punts)
+
+### 1. Comprova mitjançant el programari WireShark que la connexió d'autentificació no és segura.
+
+* *Si fem un \s en el mysql, podem observar (on esta marcat) que l'SSL no esta en ús*
+
+![1](https://user-images.githubusercontent.com/101892290/162191103-f95727d9-e9e2-4b33-9c3a-bfbc961df671.jpg)
+
+* *Per exemple, a la versio 8.0.28*
+
+![image](https://user-images.githubusercontent.com/101892290/162191378-fc0c02d1-f5bf-4752-a563-147ea3fd31fb.png)
+
+* *Si anem a una conexió i li donem click dret, Edit Connection i anem a l'apartat SSL veurem que esta posar If aviable*
+
+![image](https://user-images.githubusercontent.com/101892290/162191616-2daf786e-686c-4de7-92e7-5dd13a6fb313.png)
+
+* *Llavors, li haurem de donar que no*
+
+![image](https://user-images.githubusercontent.com/101892290/162191695-4ea897d1-75cb-45f1-854a-71263a61f202.png)
+
+* *En el WireShark, si fem alguna consulta al mysql a la conexió a la qual li hem posar al SSL no, podem observar que no esta encriptat i podem veure aquesta consulta*
+
+![1 2](https://user-images.githubusercontent.com/101892290/162192617-e17c204c-1fee-470e-b08e-b678e127f445.jpg)
+
+### 2. Indica els passos que has realitzat per configurar el servidor i fer que un dels usuaris de MySQL es connection mitjançant SSL.
+
+* *En primer lloc, per habilitar les conenection SSL, haurem de generar un certificat amb l'eina *
+
+
+
+
+
