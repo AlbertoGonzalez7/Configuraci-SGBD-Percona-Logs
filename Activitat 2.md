@@ -190,8 +190,16 @@
 
 ### Utilitza el programa mysqlbinlog per mostrar el fitxer mysql-bin.000002
 * Quin és el seu contingut?
+
+* *El contingut que es mostra es relacionats amb els canvis que fem en les dades del mysql, per exemple, els canvis que hem fet creant i borrant la bd de bar*
+
+![image](https://user-images.githubusercontent.com/101892290/162221914-03d75e86-2048-42ee-a15c-dc45d9748fd3.png)
+
 * Quin número d'event ha estat el de la creació de la base de dades bar?
 
+* *A sigut el número 233*
+
+![image](https://user-images.githubusercontent.com/101892290/162222150-c6437209-bbc7-45b7-a758-d00d9fe9b188.png)
 
 ### 9. De quina manera podem desactivar el binary log només d’una sessió en concret. Imagina’t que ets un administrador de la BD i no vols que les instruccions que facis es gravin en el binary_log.
 
