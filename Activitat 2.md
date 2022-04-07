@@ -215,7 +215,7 @@
 
 ![image](https://user-images.githubusercontent.com/101892290/162191616-2daf786e-686c-4de7-92e7-5dd13a6fb313.png)
 
-* *Llavors, li haurem de donar que no*
+* *Llavors, li donem que no per a que no s'activi per defecte*
 
 ![image](https://user-images.githubusercontent.com/101892290/162191695-4ea897d1-75cb-45f1-854a-71263a61f202.png)
 
@@ -225,7 +225,30 @@
 
 ### 2. Indica els passos que has realitzat per configurar el servidor i fer que un dels usuaris de MySQL es connection mitjançant SSL.
 
-* *En primer lloc, per habilitar les conenection SSL, haurem de generar un certificat amb l'eina *
+* *En primer lloc, per habilitar les conenection SSL, haurem de generar un certificat amb l'eina mysql_ssl_rsa_setup*
+
+![2](https://user-images.githubusercontent.com/101892290/162194350-d26ceef8-a65f-4361-93aa-a9215309a716.jpg)
+
+* *Aquests arxius s'emmagatzeman en el directori /var/lib/mysql*
+
+![2 1](https://user-images.githubusercontent.com/101892290/162194679-5d12cae8-055e-4cff-ba96-9e6acbbe9ceb.jpg)
+
+* *Ara, habilitarem les conections SSL en el servidor MYSQL*
+
+* *Reiniciem el servei Mysql per a que el certificat es carregui dintre del sistema*
+
+![2 2](https://user-images.githubusercontent.com/101892290/162195044-ad77c5cf-2900-48cb-9744-b670d000760c.jpg)
+
+* *Ara, mediant el SSl ens conectarem al MYSQL i comprovarem la informació de les variables del SSL.*
+
+* *I com podem observar, SSL tindra el seu certificat i estara habilitat*
+
+![2 3](https://user-images.githubusercontent.com/101892290/162195860-1b36036d-735b-49df-80c8-b0d04528a195.jpg)
+
+* *Si tornem a fer una consulta i la mirem per el Wireshark, podem observar que el servei esta encriptat i no es pot veure el paquet de la consulta*
+
+![3](https://user-images.githubusercontent.com/101892290/162196066-7957bdb0-22d1-468a-96a7-2a14186c99fd.jpg)
+
 
 
 
