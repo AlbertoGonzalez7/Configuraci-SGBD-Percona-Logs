@@ -278,5 +278,6 @@
 
 * https://bobcares.com/blog/mysqldump-error-1146-table-doesnt-exist/
 
+* https://www.educba.com/mysql-blob/
 
 
