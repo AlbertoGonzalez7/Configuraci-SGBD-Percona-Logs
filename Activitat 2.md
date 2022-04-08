@@ -280,4 +280,5 @@
 
 * https://www.educba.com/mysql-blob/
 
+* https://dev.mysql.com/doc/refman/5.7/en/reset-master.html#:~:text=RESET%20MASTER%20removes%20all%20binary,while%20any%20replicas%20are%20running.
 
