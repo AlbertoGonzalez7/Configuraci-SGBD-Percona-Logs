@@ -258,7 +258,25 @@
 ![3](https://user-images.githubusercontent.com/101892290/162196066-7957bdb0-22d1-468a-96a7-2a14186c99fd.jpg)
 
 
+#### Links diversos:
 
+* https://dev.mysql.com/doc/refman/8.0/en/mysql-ssl-rsa-setup.html
+
+* https://dev.mysql.com/doc/refman/8.0/en/set-sql-log-bin.html
+
+* https://programmerclick.com/article/91631662911/
+
+* https://dev.mysql.com/doc/refman/8.0/en/mysqlbinlog.html
+
+* https://dev.mysql.com/doc/refman/8.0/en/purge-binary-logs.html
+
+* https://dev.mysql.com/doc/refman/8.0/en/query-log.html
+
+* https://mariadb.com/kb/en/writing-logs-into-tables/
+
+* https://dba.stackexchange.com/questions/191422/mysql-general-log-only-shows-a-hex-number-instead-of-sql
+
+* https://bobcares.com/blog/mysqldump-error-1146-table-doesnt-exist/
 
 
 
